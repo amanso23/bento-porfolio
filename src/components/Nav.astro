@@ -1,0 +1,43 @@
+---
+import Badge from "@ui/Badge.astro"
+
+const navItems = [
+    {
+        label: "Home",
+        href: "/",
+        active: true
+    },
+    {
+        label: "About",
+        href: "/about",
+        active: false
+    },
+    {
+        label: "Projects",
+        href: "/projects",
+        active: false
+    },
+    {
+        label: "Contact",
+        href: "/contact",
+        active: false
+    },
+]
+
+---
+
+<nav class="rounded-full border border-primary px-2 py-2">
+    <ul class="flex items-center">
+        {navItems.map((item) => (
+            <li>
+                <Badge active={item.active}>
+                    <a 
+                        href={item.href}
+                    >
+                        {item.label}
+                    </a>
+                </Badge>
+            </li>
+        ))}
+    </ul>
+</nav>
