@@ -1,0 +1,59 @@
+---
+import { getGithubUser } from "@lib/getGithubUser";
+import BentoCard from "@components/BentoCard";
+import GitHub from "@icons/GitHub.astro";
+import Message from "@icons/Message.astro";
+
+
+const githubUser = await getGithubUser();
+
+const {
+    avatar_url,
+    name,
+    login,
+    url,
+    html_url
+} = githubUser
+
+---
+
+<BentoCard className="row-span-1 col-span-1">
+    <div class="flex flex-col gap-y-3">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-x-2">
+                <picture>
+                    <img 
+                        src={avatar_url}
+                        alt={name}
+                        class="size-12 rounded-full"
+                    >   
+                </picture>
+                <div class="flex flex-col justify-start">
+                    <h1 class="text-xl">{name}</h1>
+                    <p class="text-secondary text-xs mt-[-4px]">{login}</p>
+                </div>
+            </div>
+            <a href={html_url}>
+                <GitHub class="size-6 " />
+            </a>
+          
+        </div>
+
+        <p class="text-sm font-light" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis sunt neq
+            libero maiores alias 
+        </p>
+
+        <button class="border white rounded-full truncate py-2 flex items-center relative transition-colors duration-300 fill-none stroke-white  hover:bg-white hover:text-black hover:stroke-black  ">
+            <a 
+                href={html_url}
+                class="self-center text-xs opacity-85 w-full"
+            >
+            <p>Visit my GitHub</p>
+            <Message class="size-4 absolute top-[8px] right-3" /> 
+            </a>
+        </button>
+    </div>
+</BentoCard>
+
+

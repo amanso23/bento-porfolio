@@ -23,6 +23,9 @@ export default {
 			fontSize: {
 				'xxs': '0.625rem'
 			},
+			stroke: {
+				'secondary': '#B3B3B3'
+			}
 			
 
 		},

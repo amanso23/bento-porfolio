@@ -3,10 +3,13 @@
 import BentoCard from "@components/BentoCard";
 import SayHelloBentoCard from "@components/SayHelloBentoCard.astro";
 import SpotifyBentoCard from "@components/SpotifyBentoCard";
+import GithubProfileBentoCard from "./GithubProfileBentoCard.astro";
+
 ---
 
-<div class="container grid grid-cols-1 lg:grid-cols-4 grid-rows-7 gap-4 py-8 m-auto">
-    <BentoCard className="row-span-2 col-span-2" >
+<div class="max-w-6xl grid  lg:grid-cols-4 grid-rows-7 gap-4 py-8 m-auto">
+    <GithubProfileBentoCard />
+    <BentoCard className="row-span-1 col-span-1" >
         1
     </BentoCard>
     <BentoCard className="col-span-2 row-span-1" >
@@ -15,18 +18,23 @@ import SpotifyBentoCard from "@components/SpotifyBentoCard";
     <BentoCard className="row-span-2" >
         3
     </BentoCard>
+    
     <BentoCard className="row-span-1" >
-        4
+        6
     </BentoCard>
-    <SpotifyBentoCard client:visible  />
+    
+    <SpotifyBentoCard client:visible />
+   
     <BentoCard className=" col-span-1 row-span-2" >
         6
     </BentoCard>
+   
     <SayHelloBentoCard  />
+    
     <BentoCard className="row-span-1 col-span-1" >
         8
     </BentoCard>
-    <BentoCard className="row-span-2 col-span-2" >
+    <BentoCard className="row-span-1 col-span-2" >
         9
     </BentoCard>
     <BentoCard className="row-span-1 col-span-2" >

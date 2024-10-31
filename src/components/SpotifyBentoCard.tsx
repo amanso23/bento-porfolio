@@ -1,9 +1,10 @@
 import BentoCard from "@components/BentoCard";
 import { useState, useRef, useEffect } from 'react';
-import Volume from "./icons/Volume";
-import Spotify from "./icons/Spotify";
-import NoVolume from "./icons/NoVolume";
+import Volume from "../icons/Volume";
+import Spotify from "../icons/Spotify";
+import NoVolume from "../icons/NoVolume";
 import { spotifyTrack } from "@lib/spotifyTrack";
+
 
 const SpotifyBento = () => {
     const videoRef = useRef<HTMLVideoElement>(null)
@@ -21,9 +22,9 @@ const SpotifyBento = () => {
     }, [mute]);
 
     return (
-        <BentoCard className="overflow-hidden relative">
-            <a href="https://open.spotify.com/intl-es/track/0e7ipj03S05BNilyu5bRzt" className="absolute z-50 top-6 left-8 ">
-                <Spotify className="size-6" />
+        <BentoCard className="overflow-hidden">
+            <a href={spotifyTrack.href} target="_blank" rel="noopener noreferrer" className="absolute z-50 top-6 left-8 ">
+                <Spotify className="size-7" />
             </a>
             <video
                 ref={videoRef}
@@ -46,11 +47,11 @@ const SpotifyBento = () => {
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
                 <div className="flex justify-between items-center mb-2">
                     <div className="text-white">
-                        <h2 className="text-xl  font-bold">{spotifyTrack.name}</h2>
-                        <p className="text-base  opacity-75 mt-[-4px]">{spotifyTrack.artist}</p>
+                        <h2 className="text-2xl font-bold">{spotifyTrack.name}</h2>
+                        <p className="text-lg opacity-75 mt-[-4px]">{spotifyTrack.artist}</p>
                     </div>
                     <button onClick={handleClick} className="fill-white">
-                        {mute ? <NoVolume className="size-5 " /> : <Volume className="size-5 " />}
+                        {mute ? <NoVolume className="size-6 " /> : <Volume className="size-6 " />}
                     </button>
                 </div>
             </div>
