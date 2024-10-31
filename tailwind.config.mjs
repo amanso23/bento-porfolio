@@ -15,11 +15,14 @@ export default {
 				'secondary': '#B3B3B3',
 			},
 			maxWidth: {
-				'8xl': '1280px'
+				'8xl': '1380px'
 			},
 			borderRadius: {
 				'5xl': '2.5rem'
 			},
+			fontSize: {
+				'xxs': '0.625rem'
+			}
 		},
 	},
 	plugins: [],

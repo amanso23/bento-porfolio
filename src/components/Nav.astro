@@ -8,18 +8,8 @@ const navItems = [
         active: true
     },
     {
-        label: "About",
-        href: "/about",
-        active: false
-    },
-    {
         label: "Projects",
         href: "/projects",
-        active: false
-    },
-    {
-        label: "Contact",
-        href: "/contact",
         active: false
     },
 ]
@@ -30,13 +20,13 @@ const navItems = [
     <ul class="flex items-center">
         {navItems.map((item) => (
             <li>
-                <Badge active={item.active}>
-                    <a 
-                        href={item.href}
+                <a 
+                    href={item.href}
                     >
-                        {item.label}
+                         <Badge active={item.active}>
+                            {item.label}
+                        </Badge>
                     </a>
-                </Badge>
             </li>
         ))}
     </ul>

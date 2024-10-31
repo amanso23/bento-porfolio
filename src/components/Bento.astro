@@ -1,38 +1,36 @@
 ---
-import BentoExperience from "@components/BentoExperience.astro";
-import BentoCard from "./BentoCard.astro";
-import SayHelloBento from "@components/SayHelloBento.astro";
+
+import BentoCard from "@components/BentoCard";
+import SayHelloBentoCard from "@components/SayHelloBentoCard.astro";
+import SpotifyBentoCard from "@components/SpotifyBentoCard";
 ---
 
-<div class="container grid grid-cols-4 grid-rows-7 gap-4 py-28 m-auto">
-    <BentoCard class="row-span-2 col-span-2 min-h-[495px]" >
+<div class="container grid grid-cols-4 grid-rows-7 gap-4 py-8 m-auto">
+    <BentoCard className="row-span-2 col-span-2" >
         1
     </BentoCard>
-    <BentoCard class="col-span-2 row-span-1" >
+    <BentoCard className="col-span-2 row-span-1" >
         2
     </BentoCard>
-    <BentoCard class="row-span-2" >
+    <BentoCard className="row-span-2" >
         3
     </BentoCard>
-    <BentoCard class="row-span-1" >
+    <BentoCard className="row-span-1" >
         4
     </BentoCard>
-    <BentoCard class=" col-span-1" >
-        5
-    </BentoCard>
-    <BentoCard class=" col-span-1 row-span-2" >
+    <SpotifyBentoCard client:visible  />
+    <BentoCard className=" col-span-1 row-span-2" >
         6
     </BentoCard>
-    <SayHelloBento  />
-    <BentoCard class="row-span-1 col-span-1" >
+    <SayHelloBentoCard  />
+    <BentoCard className="row-span-1 col-span-1" >
         8
     </BentoCard>
-    <BentoCard class="row-span-2 col-span-2" >
+    <BentoCard className="row-span-2 col-span-2" >
         9
     </BentoCard>
-    <BentoCard class="row-span-1 col-span-2" >
+    <BentoCard className="row-span-1 col-span-2" >
         10
     </BentoCard>
-    
 </div>
 
