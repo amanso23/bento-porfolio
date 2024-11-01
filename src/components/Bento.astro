@@ -7,39 +7,36 @@ import GithubProfileBentoCard from "./GithubProfileBentoCard.astro";
 import BentoTimeCard from "./BentoTimeCard";
 import BentoStackCard from "./BentoStackCard.astro";
 
-
-
 ---
 
-<div class="max-w-6xl grid grid-cols-2 lg:grid-cols-4 grid-rows-7 gap-4 py-8 m-auto">
+<div class="max-w-6xl grid grid-cols-2 lg:grid-cols-4 grid-rows-7 gap-4 py-8 m-4 md:m-auto">
     <GithubProfileBentoCard />
-    
+
     <SpotifyBentoCard client:visible />
 
     <BentoTimeCard client:load />
 
+    <BentoCard className="row-span-2">
+        4
+    </BentoCard>
 
     <BentoCard className="row-span-2" >
         3
     </BentoCard>
     
-    <BentoCard className="row-span-1 col-span-2" >
-       4
+    <BentoCard className="row-span-1 col-span-2 overflow-hidden" >
+       <picture class="absolute left-0 top-0 w-full h-full object-contain ">
+        <img src="images/shape-1.svg" alt="gradient" class="w-full h-full object-cover ">
+       </picture>
     </BentoCard>
+
+    <SayHelloBentoCard  />
     
-    
-   
-    <BentoCard className=" col-span-1 row-span-2" >
+    <BentoCard className=" col-span-2 row-span-1" >
         6
     </BentoCard>
    
-    <SayHelloBentoCard  />
 
-    <BentoCard className="row-span-1" >
-        8
-     </BentoCard>
-
-  
     <!-- <BentoStackCard class="row-span-2 col-span-2" /> -->
 
     <BentoCard className="row-span-1 col-span-2" >
