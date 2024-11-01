@@ -4,6 +4,7 @@ import BentoCard from "@components/BentoCard";
 import SayHelloBentoCard from "@components/SayHelloBentoCard.astro";
 import SpotifyBentoCard from "@components/SpotifyBentoCard";
 import GithubProfileBentoCard from "./GithubProfileBentoCard.astro";
+import BentoTimeCard from "./BentoTimeCard";
 
 ---
 
@@ -12,9 +13,10 @@ import GithubProfileBentoCard from "./GithubProfileBentoCard.astro";
     <BentoCard className="row-span-1 col-span-1" >
         1
     </BentoCard>
-    <BentoCard className="col-span-2 row-span-1" >
-        2
-    </BentoCard>
+
+    <BentoTimeCard client:load />
+
+
     <BentoCard className="row-span-2" >
         3
     </BentoCard>
