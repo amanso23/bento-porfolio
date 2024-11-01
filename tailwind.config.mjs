@@ -6,6 +6,7 @@ export default {
 			backgroundColor: {
 				'primary': '#141414',
 				'secondary': '#1D1D1D',
+				'tertiary': '#a09c9f',
 				'accent-1': '#4355FB'
 			},
 			borderColor: {
@@ -26,8 +27,6 @@ export default {
 			stroke: {
 				'secondary': '#B3B3B3'
 			}
-			
-
 		},
 	},
 	plugins: [],

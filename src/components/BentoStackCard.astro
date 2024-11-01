@@ -1,0 +1,22 @@
+---
+
+import BentoCard from "@components/BentoCard";
+import StackCard from "./StackCard.astro";
+import { front, other } from "@lib/stack";
+
+interface Props{
+    class: string;
+}
+
+const {class: className} = Astro.props;
+
+---
+
+<BentoCard className={className}>
+    <div class="grid grid-cols-2 grid-rows-2 place-items-center">
+        <StackCard stack={front} />
+        <StackCard stack={other} />
+        <StackCard stack={front} />    
+    </div>
+</BentoCard>
+

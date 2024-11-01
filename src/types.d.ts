@@ -46,4 +46,10 @@ export interface Location {
   country: country,
   language: language
 }
+
+export interface Stack {
+  name: string,
+  icon: any,
+  href: string
+}
   

@@ -1,0 +1,7 @@
+export { default as JavaScript } from "@icons/stack/JavaScript.astro"
+export { default as ReactIcon } from "@icons/stack/ReactIcon.astro"
+export { default as Tailwind } from "@icons/stack/Tailwind.astro"
+export { default as TypeScript } from "@icons/stack/TypeScript.astro"
+export { default as Visual } from "@icons/stack/Visual.astro"
+export { default as Git } from "@icons/stack/Git.astro"
+export { default as Docker } from "@icons/stack/Docker.astro"
