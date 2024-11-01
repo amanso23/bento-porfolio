@@ -1,12 +1,14 @@
 ---
 import BentoCard from "@components/BentoCard";
+import InputText from "./ui/InputText.astro";
 ---
 
 <BentoCard className="row-span-1 col-span-1 border">
-    <div class="inline-flex flex-col gap-y-6">
-        <h1 class="text-7xl font-semibold" >
+    <div class="inline-flex flex-col h-full justify-between">
+        <h1 class="text-5xl font-semibold" >
             Say, Hello 👋
         </h1>
+        <InputText />
     </div>
 </BentoCard>
 

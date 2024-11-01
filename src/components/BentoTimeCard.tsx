@@ -64,7 +64,7 @@ const BentoTimeCard = () => {
                     <h1 className="text-8xl">
                         {currentTime ? currentTime.toLocaleTimeString(regionConfig, options) : ""}
                     </h1>
-                    <p className="text-lg uppercase backdrop-blur-sm bg-white/20 px-4 py-2 rounded-full">{getLocation()}</p>
+                    <p className="text-lg uppercase backdrop-blur-sm bg-white/10 px-4 py-2 rounded-full">{getLocation()}</p>
                 </div>
             </a>     
         </BentoCard>
