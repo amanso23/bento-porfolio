@@ -27,6 +27,7 @@ const BentoTimeCard = () => {
         return "¡Buenas noches!"
     }
 
+    
     const regionConfig = `${language}-${region}`
 
     const options: Intl.DateTimeFormatOptions = {
@@ -34,8 +35,7 @@ const BentoTimeCard = () => {
         minute: '2-digit',
         second: '2-digit',
         timeZone: 'Atlantic/Canary',
-    };
-
+    }
     
     useEffect(() => {
         const timer = setInterval(() => setCurrentTime(new Date()), 1000)

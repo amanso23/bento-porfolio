@@ -11,7 +11,6 @@ const {
     avatar_url,
     name,
     login,
-    url,
     html_url
 } = githubUser
 
@@ -29,19 +28,20 @@ const {
                     >   
                 </picture>
                 <div class="flex flex-col justify-start">
-                    <h1 class="text-xl">{name}</h1>
-                    <p class="text-secondary text-xs mt-[-4px]">{login}</p>
+                    <h1 class="text-2xl">{name}</h1>
+                    <p class="text-secondary text-sm mt-[-4px]">{login}</p>
                 </div>
             </div>
             <a href={html_url}>
-                <GitHub class="size-6 " />
+                <GitHub class="size-7 transition-opacity duration-300 hover:opacity-45 " />
             </a>
           
         </div>
 
-        <p class="text-sm font-light" >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis sunt neq
-            libero maiores alias 
+        <p class=" font-light w-[105%] mr-2" >
+             <span class="font-bold">2 years</span> developing apps.
+             Today I expand my <span class="font-bold">knowledge.</span> 
+             My <span class="font-bold"> goal</span>, to live from this.
         </p>
 
         <button class="border white rounded-full truncate py-2 flex items-center relative transition-colors duration-300 fill-none stroke-white  hover:bg-white hover:text-black hover:stroke-black  ">
