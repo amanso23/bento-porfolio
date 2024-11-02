@@ -3,10 +3,11 @@ import BentoCard from "@components/BentoCard";
 import type { Project } from "src/types";
 
 interface Props {
+    class?: string
     project: Project
 }
 
-const { project } = Astro.props
+const {class: className, project } = Astro.props
 
 const {
     name,
@@ -31,7 +32,7 @@ const {
             >
         </picture>
          <!-- <div class="absolute left-0 top-0 w-full h-full object-contain bg-transparent backdrop-blur-[1px] group-hover:backdrop-blur-none"></div>  -->
-         <h1 class="relative text-xl" >{name}</h1> 
-         <p class="text-secondary text-xs mt-[-4px] relative">{madeWith}</p> 
+        <h1 class="relative text-xl" >{name}</h1> 
+        <p class="text-secondary text-xs mt-[-2px] relative">{madeWith}</p> 
     </a>
 </BentoCard>

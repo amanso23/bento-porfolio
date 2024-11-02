@@ -5,7 +5,7 @@ import SayHelloBentoCard from "@components/SayHelloBentoCard.astro";
 import SpotifyBentoCard from "@components/SpotifyBentoCard";
 import GithubProfileBentoCard from "./GithubProfileBentoCard.astro";
 import BentoTimeCard from "@components/BentoTimeCard";
-import { starbucks} from "@lib/projects";
+import { starbucks, stockx} from "@lib/projects";
 import BentoProjectCard from "@components/BentoProjectCard.astro";
 
 ---
@@ -60,6 +60,8 @@ import BentoProjectCard from "@components/BentoProjectCard.astro";
     </BentoCard>
 
     <SayHelloBentoCard  />
+
+    <BentoProjectCard project={stockx} />
 
 </div>
 

@@ -8,3 +8,10 @@ export const starbucks: Project =
         src: "images/projects/starbucks.png"
     }
     
+export const stockx: Project = 
+    {
+        name: "StockX Clone", 
+        madeWith: "Astro, TailwindCSS",
+        href: "https://stock-x-clone.vercel.app/",
+        src: "images/projects/stockx.png"
+    }
