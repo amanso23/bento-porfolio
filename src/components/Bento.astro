@@ -28,9 +28,16 @@ import BentoTimeCard from "./BentoTimeCard";
         <img src="images/shape-1.svg" alt="gradient" class="w-full h-full object-cover  ">
        </picture>
     </BentoCard>
+ 
+    <BentoCard className="row-span-1 col-span-1 overflow-hidden group cursor-pointer"  >
+        <picture class="absolute left-0 top-0 w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 ">
+            <img src="images/projects/starbucks-clone-aux.png" alt="starbucks-clone" class="w-full h-full object-cover ">
+        </picture>
+        <!-- <div class="absolute left-0 top-0 w-full h-full object-contain bg-transparent backdrop-blur-[1px] group-hover:backdrop-blur-none"></div> -->
+        <h1 class="relative">Starbucks Clone</h1>
+        <p class="text-secondary text-xs mt-[-4px] relative">Hecho con <span class="font-bold transition-colors duration-300 group-hover:text-orange-500">ASTRO</span></p>
+    </BentoCard>
 
-    <SayHelloBentoCard  />
-    
     <BentoCard className=" col-span-2 row-span-1" >
         6
     </BentoCard>
@@ -38,8 +45,8 @@ import BentoTimeCard from "./BentoTimeCard";
 
     <!-- <BentoStackCard class="row-span-2 col-span-2" /> -->
 
-    <BentoCard className="row-span-1 col-span-2" >
-        10
+    <BentoCard className="row-span-1 col-span-2 overflow-hidden">
+        7
     </BentoCard>
     
     <BentoCard className="row-span-1 col-span-1" >
@@ -52,13 +59,12 @@ import BentoTimeCard from "./BentoTimeCard";
         </div>
     </BentoCard>
     <BentoCard className="row-span-1 col-span-1" >
-    
         <picture class="grid place-items-center h-full">
             <img src="images/spain-flag.svg" alt="" class="size-48">
         </picture>
     </BentoCard>
 
-    
-    
+    <SayHelloBentoCard  />
+
 </div>
 

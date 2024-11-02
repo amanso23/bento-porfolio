@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import BentoCard from "@components/BentoCard"
 import { location } from "@lib/location"
 import { country } from "src/const"
+import Redirect from "@icons/Redirect"
 
 const BentoTimeCard = () => {
 
@@ -53,8 +54,7 @@ const BentoTimeCard = () => {
     }, [])
 
     return (
-        <BentoCard className="col-span-1 row-span-1 overflow-hidden transition-opacity duration-200 hover:opacity-80 group" redirect>
-            <a href={linkToMaps} target="_blank" rel="noopener noreferrer">
+        <BentoCard className="col-span-1 row-span-1 overflow-hidden">
                 <picture className="absolute top-0 left-0 w-full h-full object-cover">
                     <img src={getPicture()} alt="picture" className="w-full h-full object-cover z-0" />
                 </picture>
@@ -63,11 +63,17 @@ const BentoTimeCard = () => {
                     <h1 className="text-5xl">
                         {currentTime ? currentTime.toLocaleTimeString(regionConfig, options) : ""}
                     </h1>
-                    <p className="uppercase backdrop-blur-sm bg-white/40 px-4 py-2 rounded-full">{getLocation()}</p>
+                    <a 
+                        href={linkToMaps} target="_blank" rel="noopener noreferrer"
+                        className="group uppercase backdrop-blur-sm bg-white/40 px-3 py-2 rounded-full transition-colors duration-200 hover:bg-white/60"  
+                    >
+                        {getLocation()}
+                        <Redirect className="stroke-white inline-block size-5 mb-[2px] ml-1 transition-transform duration-300 group-hover:transform group-hover:-translate-y-1 group-hover:translate-x-1 " />
+                    </a>
                 </div>
-            </a>     
         </BentoCard>
     )
 }
+
 
 export default BentoTimeCard

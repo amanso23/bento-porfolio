@@ -13,7 +13,7 @@ interface Props{
 const BentoCard = ({ className, redirect, children }: Props) => {
     return (
         <div className={`relative border border-primary rounded-[64px] py-6 px-8 bg-secondary ${className}`}>
-            {redirect && <Redirect className="absolute top-6 right-8 size-7 fill-white z-50 transition-transform duration-200 transform group-hover:translate-x-1 group-hover:-translate-y-1" />}
+            {redirect && <Redirect className="absolute top-6 right-8 size-5 stroke-white z-[999] transition-transform duration-200 transform group-hover:translate-x-1 group-hover:-translate-y-1" />}
             {children}
         </div>
     )
