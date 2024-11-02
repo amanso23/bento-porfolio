@@ -4,7 +4,9 @@ import BentoCard from "@components/BentoCard";
 import SayHelloBentoCard from "@components/SayHelloBentoCard.astro";
 import SpotifyBentoCard from "@components/SpotifyBentoCard";
 import GithubProfileBentoCard from "./GithubProfileBentoCard.astro";
-import BentoTimeCard from "./BentoTimeCard";
+import BentoTimeCard from "@components/BentoTimeCard";
+import { starbucks} from "@lib/projects";
+import BentoProjectCard from "@components/BentoProjectCard.astro";
 
 ---
 
@@ -29,14 +31,7 @@ import BentoTimeCard from "./BentoTimeCard";
        </picture>
     </BentoCard>
  
-    <BentoCard className="row-span-1 col-span-1 overflow-hidden group cursor-pointer"  >
-        <picture class="absolute left-0 top-0 w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 ">
-            <img src="images/projects/starbucks-clone-aux.png" alt="starbucks-clone" class="w-full h-full object-cover ">
-        </picture>
-        <!-- <div class="absolute left-0 top-0 w-full h-full object-contain bg-transparent backdrop-blur-[1px] group-hover:backdrop-blur-none"></div> -->
-        <h1 class="relative">Starbucks Clone</h1>
-        <p class="text-secondary text-xs mt-[-4px] relative">Hecho con <span class="font-bold transition-colors duration-300 group-hover:text-orange-500">ASTRO</span></p>
-    </BentoCard>
+    <BentoProjectCard project={starbucks} />
 
     <BentoCard className=" col-span-2 row-span-1" >
         6

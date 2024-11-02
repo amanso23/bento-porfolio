@@ -43,7 +43,6 @@ const BentoTimeCard = () => {
     const options: Intl.DateTimeFormatOptions = {
         hour: '2-digit',
         minute: '2-digit',
-        second: '2-digit',
         timeZone: 'Atlantic/Canary',
     }
 
@@ -53,16 +52,16 @@ const BentoTimeCard = () => {
         return () => clearInterval(timer)
     }, [])
 
+    const seconds = currentTime?.getSeconds().toString().padStart(2, '0')
+
     return (
         <BentoCard className="col-span-1 row-span-1 overflow-hidden">
                 <picture className="absolute top-0 left-0 w-full h-full object-cover">
                     <img src={getPicture()} alt="picture" className="w-full h-full object-cover z-0" />
                 </picture>
-                <div className="flex flex-col gap-y-4 h-full items-start font-bold z-50 relative" >
+                <div className="grid place-items-start h-full font-bold z-50 relative" >
                     <h2 className="text-3xl">{getGreeting()}</h2>
-                    <h1 className="text-5xl">
-                        {currentTime ? currentTime.toLocaleTimeString(regionConfig, options) : ""}
-                    </h1>
+                    {currentTime ? <div className="flex items-center gap-x-1"><h1 className="text-7xl">{currentTime.toLocaleTimeString(regionConfig, options)} </h1><p className="text-2xl mt-7">{seconds}</p></div> : ""}
                     <a 
                         href={linkToMaps} target="_blank" rel="noopener noreferrer"
                         className="group uppercase backdrop-blur-sm bg-white/40 px-3 py-2 rounded-full transition-colors duration-200 hover:bg-white/60"  
