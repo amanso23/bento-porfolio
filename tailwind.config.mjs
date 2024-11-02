@@ -14,6 +14,7 @@ export default {
 			},
 			colors: {
 				'secondary': '#B3B3B3',
+				'tertiary': '#1D1D1D',
 			},
 			maxWidth: {
 				'8xl': '1380px'

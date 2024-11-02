@@ -50,7 +50,7 @@ const SpotifyBento = () => {
                         <p className="text-xl opacity-75 mt-[-4px]">{spotifyTrack.artist}</p>
                     </div>
                     <button onClick={handleClick} className="fill-white" >
-                        {mute ? <NoVolume className="size-7 " /> : <Volume className="size-6 " />}
+                        {mute ? <NoVolume className="size-7 " /> : <Volume className="size-7 " />}
                     </button>
                 </div>
             </div>

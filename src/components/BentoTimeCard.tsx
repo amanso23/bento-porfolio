@@ -34,7 +34,7 @@ const BentoTimeCard = () => {
         const hours = currentTime.getHours()
         if(hours < 18) return "images/morning.webp"
         if(hours < 20) return "images/late-night.webp"
-        return "images/night.webp"
+        return "images/evening.webp"
     }
 
     const regionConfig = `${language}-${region}`
