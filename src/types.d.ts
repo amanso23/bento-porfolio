@@ -1,3 +1,5 @@
+import { country, language } from "src/const"
+
 export interface UserType {
     login: string
     id: number
@@ -33,4 +35,28 @@ export interface UserType {
     created_at: string
     updated_at: string
   }
-  
+
+export type country = keyof typeof country
+export type language = keyof typeof language
+
+export interface Location {
+  linkToMaps: string,
+  city: string,
+  region: region,
+  country: country,
+  language: language
+}
+
+export interface Stack {
+  name: string,
+  icon: any,
+  href: string
+}
+
+export interface Project {
+  name: string,
+  madeWith: string,
+  href: string,
+  src: string,
+}
+

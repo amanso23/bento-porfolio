@@ -5,14 +5,20 @@ export default {
 		extend: {
 			backgroundColor: {
 				'primary': '#141414',
-				'secondary': '#1D1D1D',
-				'accent-1': '#4355FB'
+				'secondary':'#1D1D1D',
+				'tertiary': '#a09c9f',
+				'accent-1': '#4355FB',
+				'accent-2': '#12B76A',
 			},
 			borderColor: {
 				'primary': '#232323'
 			},
 			colors: {
 				'secondary': '#B3B3B3',
+				'tertiary': '#1D1D1D',
+			},
+			fill: {
+				'secondary': '#B3B3B3'
 			},
 			maxWidth: {
 				'8xl': '1380px'
@@ -26,8 +32,6 @@ export default {
 			stroke: {
 				'secondary': '#B3B3B3'
 			}
-			
-
 		},
 	},
 	plugins: [],

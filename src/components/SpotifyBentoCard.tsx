@@ -13,18 +13,17 @@ const SpotifyBento = () => {
 
     const handleClick = () => {
         setIsMute(!mute)
-    };
-
-    useEffect(() => {
         if(audioRef.current){
             audioRef.current.play()
         }
-    }, [mute]);
+    };
+
+   
 
     return (
         <BentoCard className="overflow-hidden">
             <a href={spotifyTrack.href} target="_blank" rel="noopener noreferrer" className="absolute z-50 top-6 left-8 ">
-                <Spotify className="size-7" />
+                <Spotify className="size-10 transition-opacity duration-300 hover:opacity-70" />
             </a>
             <video
                 ref={videoRef}
@@ -47,11 +46,11 @@ const SpotifyBento = () => {
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
                 <div className="flex justify-between items-center mb-2">
                     <div className="text-white">
-                        <h2 className="text-2xl font-bold">{spotifyTrack.name}</h2>
-                        <p className="text-lg opacity-75 mt-[-4px]">{spotifyTrack.artist}</p>
+                        <h2 className="text-3xl font-bold">{spotifyTrack.name}</h2>
+                        <p className="text-xl opacity-75 mt-[-4px]">{spotifyTrack.artist}</p>
                     </div>
-                    <button onClick={handleClick} className="fill-white">
-                        {mute ? <NoVolume className="size-6 " /> : <Volume className="size-6 " />}
+                    <button onClick={handleClick} className="fill-white" >
+                        {mute ? <NoVolume className="size-7 " /> : <Volume className="size-7 " />}
                     </button>
                 </div>
             </div>

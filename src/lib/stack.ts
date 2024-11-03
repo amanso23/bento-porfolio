@@ -1,0 +1,15 @@
+export const stack = [
+    "React",
+    "Astro",
+    "Java",
+    "PHP",
+    "TypeScript",
+    "Tailwind CSS",
+    "Spring Boot",
+    "MySQL",
+    "Laravel",
+    "Docker",
+    "Git",
+    "GitHub",
+    "Vercel",
+]

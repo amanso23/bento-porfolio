@@ -1,0 +1,21 @@
+---
+import type { Stack } from 'src/types';
+
+interface Props{
+    stack: Stack[]
+}
+
+const { stack } = Astro.props;
+
+---
+
+<div class="rounded-[50px] grid grid-cols-2 grid-rows-2 bg-tertiary/30 m-2 p-3">
+    {stack.map((item) => (
+        <a 
+            href={item.href}
+            class="grid place-items-center m-1"  
+        >
+            <item.icon class="size-24 rounded-3xl transition-transform duration-400 hover:scale-105 " />
+        </a>
+    ))}
+</div>

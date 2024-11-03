@@ -1,12 +1,12 @@
 ---
-import Header from '@components/Header.astro';
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import { getGithubUser } from "@lib/getGithubUser";
 
-interface Props {
-	title: string;
-}
+const { 
+	login, 
+	avatar_url 
+	} = await getGithubUser();
 
-const { title } = Astro.props;
+
 ---
 
 <!doctype html>
@@ -15,24 +15,26 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={avatar_url} />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-		<ViewTransitions />
-		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>{`${login}`}</title>
 	</head>
 	<body class="poppins-regular">
 		<main class="max-w-7xl m-auto">
-			<Header />
 			<slot />
+			<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quas autem architecto sit fugit explicabo natus assumenda sint, amet odit, illo, adipisci consectetur iusto? Dicta repellat dolorem magni at sint.</p>
 		</main>
 	</body>
 </html>
 <style is:global>
-	html{
-		@apply bg-primary text-white
+	html {
+		@apply bg-primary text-white;
 	}
 
 	.poppins-thin {
@@ -48,46 +50,54 @@ const { title } = Astro.props;
 	}
 
 	.poppins-light {
-	font-family: "Poppins", sans-serif;
-	font-weight: 300;
-	font-style: normal;
+		font-family: "Poppins", sans-serif;
+		font-weight: 300;
+		font-style: normal;
 	}
 
 	.poppins-regular {
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-	font-style: normal;
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		font-style: normal;
 	}
 
 	.poppins-medium {
-	font-family: "Poppins", sans-serif;
-	font-weight: 500;
-	font-style: normal;
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+		font-style: normal;
 	}
 
 	.poppins-semibold {
-	font-family: "Poppins", sans-serif;
-	font-weight: 600;
-	font-style: normal;
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+		font-style: normal;
 	}
 
 	.poppins-bold {
-	font-family: "Poppins", sans-serif;
-	font-weight: 700;
-	font-style: normal;
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		font-style: normal;
 	}
 
 	.poppins-extrabold {
-	font-family: "Poppins", sans-serif;
-	font-weight: 800;
-	font-style: normal;
+		font-family: "Poppins", sans-serif;
+		font-weight: 800;
+		font-style: normal;
 	}
 
 	.poppins-black {
-	font-family: "Poppins", sans-serif;
-	font-weight: 900;
-	font-style: normal;
+		font-family: "Poppins", sans-serif;
+		font-weight: 900;
+		font-style: normal;
 	}
 
 
+	
+
+
+
 </style>
+
+<script>
+	
+</script>
