@@ -5,13 +5,14 @@ import SayHelloBentoCard from "@components/SayHelloBentoCard.astro";
 import SpotifyBentoCard from "@components/SpotifyBentoCard";
 import GithubProfileBentoCard from "./GithubProfileBentoCard.astro";
 import BentoTimeCard from "@components/BentoTimeCard";
-import { starbucks, stockx} from "@lib/projects";
+import { starbucks, stockx, reactBasicsCommands} from "@lib/projects";
 import BentoProjectCard from "@components/BentoProjectCard.astro";
 import BentoStackCard from "./BentoStackCard.astro";
+import BentoPosterCard from "./BentoPosterCard.astro";
 
 ---
 
-<div class="max-w-6xl grid grid-cols-2 lg:grid-cols-4 grid-rows-7 gap-4 py-8 m-4 md:m-auto">
+<div class="max-w-6xl grid grid-cols-2 lg:grid-cols-4 grid-rows-7 gap-4 py-12 m-4 md:m-auto">
     <GithubProfileBentoCard />
 
     <SpotifyBentoCard client:load />
@@ -22,11 +23,7 @@ import BentoStackCard from "./BentoStackCard.astro";
 
     <BentoStackCard class="row-span-2" />
    
-    <BentoCard className="row-span-1 col-span-2 overflow-hidden" >
-       <picture class="absolute left-0 top-0 w-full h-full object-contain ">
-        <img src="images/shape-1.svg" alt="gradient" class="w-full h-full object-cover  ">
-       </picture>
-    </BentoCard>
+    <BentoPosterCard src="images/shape-1.svg" class="col-span-2" position="top-0"  />
  
     <BentoProjectCard project={starbucks} />
 
@@ -39,24 +36,23 @@ import BentoStackCard from "./BentoStackCard.astro";
             <h1 class="font-black text-4xl">obsessive</h1>
         </div>
     </BentoCard>
+
     <BentoCard className="row-span-1 col-span-1" >
         <picture class="grid place-items-center h-full">
             <img src="images/spain-flag.svg" alt="" class="size-48">
         </picture>
     </BentoCard>
 
-   
-
     <SayHelloBentoCard  />
     
-    
-    <BentoCard className=" col-span-2 row-span-1" >
-        6
+
+    <BentoPosterCard src="images/tyson-walpaper.webp" class="row-span-2" position="object-top" />
+
+    <BentoProjectCard class="col-span-2" project={reactBasicsCommands} /> 
+
+
+    <BentoCard>
+        1
     </BentoCard>
-
-    
-
-    <!-- <BentoProjectCard project={stockx} /> -->
-
 </div>
 
