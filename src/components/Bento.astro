@@ -14,7 +14,7 @@ import BentoStackCard from "./BentoStackCard.astro";
 <div class="max-w-6xl grid grid-cols-2 lg:grid-cols-4 grid-rows-7 gap-4 py-8 m-4 md:m-auto">
     <GithubProfileBentoCard />
 
-    <SpotifyBentoCard client:visible />
+    <SpotifyBentoCard client:load />
 
     <BentoTimeCard client:load />
 
@@ -45,9 +45,7 @@ import BentoStackCard from "./BentoStackCard.astro";
         </picture>
     </BentoCard>
 
-
-
-    <!-- <BentoStackCard class="row-span-2 col-span-2" /> -->
+   
 
     <SayHelloBentoCard  />
     
