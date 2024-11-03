@@ -18,7 +18,7 @@ const {
 
 ---
 
-<BentoCard className="overflow-hidden group">
+<BentoCard className={`overflow-hidden group ${className}`} redirect >
     <a 
         href={href}
         rel="noopener noreferrer"
@@ -31,7 +31,7 @@ const {
                 class="w-full h-full object-cover"
             >
         </picture>
-         <!-- <div class="absolute left-0 top-0 w-full h-full object-contain bg-transparent backdrop-blur-[1px] group-hover:backdrop-blur-none"></div>  -->
+        <!-- <div class="absolute left-0 top-0 w-full h-full object-contain bg-transparent backdrop-blur-[0.5px] group-hover:backdrop-blur-none"></div>  -->
         <h1 class="relative text-xl" >{name}</h1> 
         <p class="text-secondary text-xs mt-[-2px] relative">{madeWith}</p> 
     </a>

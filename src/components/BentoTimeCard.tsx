@@ -25,7 +25,7 @@ const BentoTimeCard = () => {
     const getGreeting = () => {
         if (!currentTime) return ""
         const hours = currentTime.getHours()
-        if(hours < 12) return "¡Buenos días!"
+        if(hours < 14) return "¡Buenos días!"
         if(hours < 20) return "¡Buenas tardes!"
         return "¡Buenas noches!"
     }
@@ -60,7 +60,7 @@ const BentoTimeCard = () => {
                     <img src={getPicture()} alt="picture" className="w-full h-full object-cover z-0" />
                 </picture>
                 <div className="grid place-items-start h-full font-bold z-50 relative" >
-                    <h2 className="text-3xl">{getGreeting()}</h2>
+                    <h2 className="text-4xl">{getGreeting()}</h2>
                     {currentTime ? <div className="flex items-center gap-x-1"><h1 className="text-7xl">{currentTime.toLocaleTimeString(regionConfig, options)} </h1><p className="text-2xl mt-7">{seconds}</p></div> : ""}
                     <a 
                         href={linkToMaps} target="_blank" rel="noopener noreferrer"
@@ -73,6 +73,5 @@ const BentoTimeCard = () => {
         </BentoCard>
     )
 }
-
 
 export default BentoTimeCard

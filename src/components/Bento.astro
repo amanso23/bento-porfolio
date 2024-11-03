@@ -7,6 +7,7 @@ import GithubProfileBentoCard from "./GithubProfileBentoCard.astro";
 import BentoTimeCard from "@components/BentoTimeCard";
 import { starbucks, stockx} from "@lib/projects";
 import BentoProjectCard from "@components/BentoProjectCard.astro";
+import BentoStackCard from "./BentoStackCard.astro";
 
 ---
 
@@ -17,14 +18,10 @@ import BentoProjectCard from "@components/BentoProjectCard.astro";
 
     <BentoTimeCard client:load />
 
-    <BentoCard className="row-span-2">
-        4
-    </BentoCard>
+    <BentoProjectCard class="row-span-2" project={stockx} />    
 
-    <BentoCard className="row-span-2" >
-        3
-    </BentoCard>
-    
+    <BentoStackCard class="row-span-2" />
+   
     <BentoCard className="row-span-1 col-span-2 overflow-hidden" >
        <picture class="absolute left-0 top-0 w-full h-full object-contain ">
         <img src="images/shape-1.svg" alt="gradient" class="w-full h-full object-cover  ">
@@ -33,15 +30,6 @@ import BentoProjectCard from "@components/BentoProjectCard.astro";
  
     <BentoProjectCard project={starbucks} />
 
-    <BentoCard className=" col-span-2 row-span-1" >
-        6
-    </BentoCard>
-   
-
-    <!-- <BentoStackCard class="row-span-2 col-span-2" /> -->
-
-    <SayHelloBentoCard  />
-    
     <BentoCard className="row-span-1 col-span-1" >
         <div class="grid place-items-center h-full ">
             <h1 class="font-black text-4xl">obsessive</h1>
@@ -55,6 +43,17 @@ import BentoProjectCard from "@components/BentoProjectCard.astro";
         <picture class="grid place-items-center h-full">
             <img src="images/spain-flag.svg" alt="" class="size-48">
         </picture>
+    </BentoCard>
+
+
+
+    <!-- <BentoStackCard class="row-span-2 col-span-2" /> -->
+
+    <SayHelloBentoCard  />
+    
+    
+    <BentoCard className=" col-span-2 row-span-1" >
+        6
     </BentoCard>
 
     
