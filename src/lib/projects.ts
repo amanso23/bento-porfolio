@@ -23,3 +23,12 @@ export const reactBasicsCommands: Project =
         href: "https://react-basic-installation-command.vercel.app/",
         src: "images/projects/react-basics-commands.webp"
     }
+
+
+    export const theSimpsons: Project = 
+    {
+        name: "Simpsons Game", 
+        madeWith: "HTML, CSS, JavaScript",
+        href: "https://simpson-card-game.vercel.app/",
+        src: "images/projects/simpsons.jpg"
+    }

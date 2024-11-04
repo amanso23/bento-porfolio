@@ -1,24 +1,21 @@
 ---
-import BentoCard from '@components/BentoCard'
-
+import BentoCard from "@components/BentoCard";
 
 interface Props {
-    class?: string
-    src: string
-    position?: string
+  class?: string;
+  src: string;
+  position?: string;
 }
 
-const {class: className, src, position } = Astro.props
-
+const { class: className, src, position } = Astro.props;
 ---
 
 <BentoCard className=`${className && className}`>
-    <picture class="object-cover w-full h-full">
-        <img 
-            src={src}
-            alt="tyson" 
-            class=`object-cover w-full h-full absolute left-0 top-0 ${position ? position : ""}`
-        >
-    </picture>
+  <picture class="object-cover w-full h-full">
+    <img
+      src={src}
+      alt="tyson"
+      class=`object-cover w-full h-full absolute left-0 top-0 ${position ? position : ""}`
+    />
+  </picture>
 </BentoCard>
-
