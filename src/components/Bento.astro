@@ -13,7 +13,7 @@ import LetterboxdBentoCard from "@components/LetterboxdBentoCard.astro";
 
 ---
 
-<div class="border lg:max-w-6xl lg:m-auto grid place-content-center grid-cols-[repeat(1,268px)] grid-rows-[repeat(20,268px)] md:grid-cols-[repeat(2,268px)] md:grid-rows-[repeat(12,268px)] lg:grid-cols-[repeat(3,268px)]  lg:grid-rows-[repeat(999,268px)] xl:grid-cols-[repeat(4,268px)]  xl:grid-rows-[repeat(6,268px)] gap-4 py-12">
+<div class="lg:max-w-6xl lg:m-auto grid place-content-center grid-cols-[repeat(1,268px)] grid-rows-[repeat(20,268px)] md:grid-cols-[repeat(2,268px)] md:grid-rows-[repeat(12,268px)] lg:grid-cols-[repeat(3,268px)]  lg:grid-rows-[repeat(999,268px)] xl:grid-cols-[repeat(4,268px)]  xl:grid-rows-[repeat(6,268px)] gap-4 py-12">
     <GithubProfileBentoCard />
 
     <SpotifyBentoCard client:load />
@@ -56,25 +56,27 @@ import LetterboxdBentoCard from "@components/LetterboxdBentoCard.astro";
 
     <LetterboxdBentoCard />
 
-<!-- 
-    <BentoCard className="col-span-2">
-        <p class="text-5xl">Esta página ha sido creada usando <span class="font-bold uppercase">Astro</span>, <span class="font-bold uppercase">React</span> y <span class="font-bold uppercase">Tailwind CSS</span>.</p>
-
-    </BentoCard> -->
-
     <BentoCard className="md:col-span-2 lg:hidden xl:block">
     <h1>1</h1>
     </BentoCard>
 
     <BentoCard >
         <div class="grid place-items-center h-full">
-           <span class="font-bold text-5xl"> {new Date().getFullYear()} &COPY;</span>
+           <span class="font-bold text-5xl relative"> {new Date().getFullYear()} &COPY;</span>
         </div>
     </BentoCard>
     
-    <BentoCard className="md:col-span-1 lg:col-span-2 xl:col-span-1 ">
+    <BentoCard className="md:col-span-1 lg:col-span-2 xl:col-span-1 w-full ">
         <img src="images/noise-2.webp" alt="noise" class="absolute inset-0 w-full h-full">
-        <p class="relative lg:text-3xl xl:text-base ">Loosely designed in <span class="font-bold lg:text-3xl xl:text-base">Figma</span> and coded in <span class="font-bold lg:text-3xl  xl:text-base">Visual Studio Code</span> by yours truly. Built with <span class="font-bold lg:text-3xl  xl:text-base">Next.js</span> and <span class="font-bold lg:text-3xl  xl:text-base">Tailwind CSS</span>, deployed with <span class="font-bold lg:text-3xl  xl:text-base">Vercel</span>. All text is set in the <span class="font-bold lg:text-3xl  xl:text-base">Inter</span> typeface.</p>
+        <p class="relative lg:text-xl">
+            Designed in <span class="font-bold lg:text-xl ">Figma</span> and coded in 
+            <span class="font-bold lg:text-xl ">Visual Studio Code</span> Built with 
+            <span class="font-bold lg:text-xl ">Astro</span>, 
+            <span class="font-bold lg:text-xl ">React</span>, and 
+            <span class="font-bold lg:text-xl ">Tailwind CSS</span>, 
+            deployed with <span class="font-bold lg:text-xl ">Vercel</span>. 
+          </p>
+          
     </BentoCard>
     
 </div>
