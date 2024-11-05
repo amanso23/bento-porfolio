@@ -21,7 +21,7 @@ const SpotifyBento = () => {
    
 
     return (
-        <BentoCard className="overflow-hidden">
+        <BentoCard>
             <a href={spotifyTrack.href} target="_blank" rel="noopener noreferrer" className="absolute z-50 top-6 left-8 ">
                 <Spotify className="size-10 transition-opacity duration-300 hover:opacity-70" />
             </a>
