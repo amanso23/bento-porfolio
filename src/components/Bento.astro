@@ -54,7 +54,7 @@ import LetterboxdBentoCard from "@components/LetterboxdBentoCard.astro";
 
     <BentoProjectCard project={twitter}  />
 
-    <!-- <LetterboxdBentoCard /> -->
+    <LetterboxdBentoCard />
 
 <!-- 
     <BentoCard className="col-span-2">
@@ -62,7 +62,7 @@ import LetterboxdBentoCard from "@components/LetterboxdBentoCard.astro";
 
     </BentoCard> -->
 
-    <BentoCard className="md:col-span-2 lg:hidden">
+    <BentoCard className="md:col-span-2 lg:hidden xl:block">
     <h1>1</h1>
     </BentoCard>
 
@@ -72,9 +72,9 @@ import LetterboxdBentoCard from "@components/LetterboxdBentoCard.astro";
         </div>
     </BentoCard>
     
-    <BentoCard>
+    <BentoCard className="md:col-span-1 lg:col-span-2 xl:col-span-1 ">
         <img src="images/noise-2.webp" alt="noise" class="absolute inset-0 w-full h-full">
-        <p class="relative">Loosely designed in <span class="font-bold text-xl">Figma</span> and coded in <span class="font-bold text-xl">Visual Studio Code</span> by yours truly. Built with <span class="font-bold text-xl">Next.js</span> and <span class="font-bold text-xl">Tailwind CSS</span>, deployed with <span class="font-bold text-xl">Vercel</span>. All text is set in the <span class="font-bold text-xl">Inter</span> typeface.</p>
+        <p class="relative lg:text-3xl xl:text-base ">Loosely designed in <span class="font-bold lg:text-3xl xl:text-base">Figma</span> and coded in <span class="font-bold lg:text-3xl  xl:text-base">Visual Studio Code</span> by yours truly. Built with <span class="font-bold lg:text-3xl  xl:text-base">Next.js</span> and <span class="font-bold lg:text-3xl  xl:text-base">Tailwind CSS</span>, deployed with <span class="font-bold lg:text-3xl  xl:text-base">Vercel</span>. All text is set in the <span class="font-bold lg:text-3xl  xl:text-base">Inter</span> typeface.</p>
     </BentoCard>
     
 </div>
