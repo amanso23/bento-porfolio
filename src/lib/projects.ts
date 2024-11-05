@@ -32,3 +32,11 @@ export const reactBasicsCommands: Project =
         href: "https://simpson-card-game.vercel.app/",
         src: "images/projects/simpsons.jpg"
     }
+
+    export const twitter: Project = 
+    {
+        name: "Twitter Clone", 
+        madeWith: "React, Tailwind CSS",
+        href: "https://twitter-frontend-clone-beta.vercel.app/home",
+        src: "images/projects/twitter-clone.webp"
+    }

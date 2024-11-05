@@ -5,14 +5,14 @@ import SayHelloBentoCard from "@components/SayHelloBentoCard.astro";
 import SpotifyBentoCard from "@components/SpotifyBentoCard";
 import GithubProfileBentoCard from "./GithubProfileBentoCard.astro";
 import BentoTimeCard from "@components/BentoTimeCard";
-import { starbucks, stockx, reactBasicsCommands, theSimpsons} from "@lib/projects";
+import { starbucks, stockx, reactBasicsCommands, theSimpsons, twitter} from "@lib/projects";
 import BentoProjectCard from "@components/BentoProjectCard.astro";
 import BentoStackCard from "./BentoStackCard.astro";
 import BentoPosterCard from "./BentoPosterCard.astro";
 
 ---
 
-<div class="max-w-6xl grid grid-cols-2 lg:grid-cols-4 grid-rows-7 gap-4 py-12 m-4 md:m-auto">
+<div class="grid grid-cols-2 lg:grid-cols-4 grid-rows-7 gap-4 py-12">
     <GithubProfileBentoCard />
 
     <SpotifyBentoCard client:load />
@@ -45,11 +45,19 @@ import BentoPosterCard from "./BentoPosterCard.astro";
 
     <SayHelloBentoCard  />
     
-
     <BentoPosterCard src="images/tyson-walpaper.webp" class="row-span-2" position="object-top" />
 
     <BentoProjectCard class="col-span-2" project={reactBasicsCommands} /> 
 
     <BentoProjectCard project={theSimpsons} />
+
+    <BentoProjectCard project={twitter}  />
+
+<!-- 
+    <BentoCard className="col-span-2">
+        <p class="text-5xl">Esta página ha sido creada usando <span class="font-bold uppercase">Astro</span>, <span class="font-bold uppercase">React</span> y <span class="font-bold uppercase">Tailwind CSS</span>.</p>
+
+    </BentoCard> -->
+    
 </div>
 

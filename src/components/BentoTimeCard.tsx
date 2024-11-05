@@ -35,7 +35,7 @@ const BentoTimeCard = () => {
         const hours = currentTime.getHours()
         if(hours < 18) return "images/morning.webp"
         if(hours < 20) return "images/late-night.webp"
-        return "images/evening.webp"
+        return "images/evening.avif"
     }
 
     const regionConfig = `${language}-${region}`
@@ -61,7 +61,7 @@ const BentoTimeCard = () => {
                 </picture>
                 <div className="grid place-items-start h-full font-bold z-50 relative" >
                     <h2 className="text-4xl">{getGreeting()}</h2>
-                    {currentTime ? <div className="flex items-center gap-x-1"><h1 className="text-7xl">{currentTime.toLocaleTimeString(regionConfig, options)} </h1><p className="text-2xl mt-7">{seconds}</p></div> : ""}
+                    {currentTime ? <div className="flex items-center gap-x-1"><h1 className="text-6xl">{currentTime.toLocaleTimeString(regionConfig, options)} </h1><p className="text-3xl mt-5">{seconds}</p></div> : ""}
                     <a 
                         href={linkToMaps} target="_blank" rel="noopener noreferrer"
                         className="group uppercase backdrop-blur-sm bg-white/40 px-3 py-2 rounded-full transition-colors duration-200 hover:bg-white/60"  
