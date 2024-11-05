@@ -34,6 +34,7 @@ export default {
 			stroke: {
 				'secondary': '#B3B3B3'
 			},
+			
 			animation : {
 				'fade-in': 'fadeIn 0.5s ease-in-out forwards',
 			},
