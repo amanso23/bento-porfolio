@@ -9,6 +9,7 @@ export default {
 				'tertiary': '#a09c9f',
 				'accent-1': '#4355FB',
 				'accent-2': '#12B76A',
+				'letterboxd': '#191e24'
 			},
 			borderColor: {
 				'primary': '#232323'
@@ -16,6 +17,7 @@ export default {
 			colors: {
 				'secondary': '#B3B3B3',
 				'tertiary': '#1D1D1D',
+				'letterboxd': '#445566'
 			},
 			fill: {
 				'secondary': '#B3B3B3'

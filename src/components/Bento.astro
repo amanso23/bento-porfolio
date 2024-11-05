@@ -9,6 +9,7 @@ import { starbucks, stockx, reactBasicsCommands, theSimpsons, twitter} from "@li
 import BentoProjectCard from "@components/BentoProjectCard.astro";
 import BentoStackCard from "./BentoStackCard.astro";
 import BentoPosterCard from "./BentoPosterCard.astro";
+import LetterboxdBentoCard from "@components/LetterboxdBentoCard.astro";
 
 ---
 
@@ -29,11 +30,11 @@ import BentoPosterCard from "./BentoPosterCard.astro";
 
     <BentoCard className="row-span-1 col-span-1" >
         <div class="grid place-items-center h-full ">
-            <h1 class="font-black text-4xl">obsessive</h1>
-            <h1 class="font-black text-4xl">obsessive</h1>
-            <h1 class="font-black text-4xl">obsessive</h1>
-            <h1 class="font-black text-4xl">obsessive</h1>
-            <h1 class="font-black text-4xl">obsessive</h1>
+            <h1 class="font-bold text-4xl">obsessive</h1>
+            <h1 class="font-bold text-4xl">obsessive</h1>
+            <h1 class="font-bold text-4xl">obsessive</h1>
+            <h1 class="font-bold text-4xl">obsessive</h1>
+            <h1 class="font-bold text-4xl">obsessive</h1>
         </div>
     </BentoCard>
 
@@ -53,11 +54,29 @@ import BentoPosterCard from "./BentoPosterCard.astro";
 
     <BentoProjectCard project={twitter}  />
 
+    <LetterboxdBentoCard />
+
 <!-- 
     <BentoCard className="col-span-2">
         <p class="text-5xl">Esta página ha sido creada usando <span class="font-bold uppercase">Astro</span>, <span class="font-bold uppercase">React</span> y <span class="font-bold uppercase">Tailwind CSS</span>.</p>
 
     </BentoCard> -->
+
+    <BentoCard className="col-span-2">
+        <h1>2</h1>
+    </BentoCard>
+
+    <BentoCard>
+        <div class="grid place-items-center h-full">
+           <span class="font-bold text-6xl"> {new Date().getFullYear()} &COPY;</span>
+        </div>
+    </BentoCard>
+    
+
+    <BentoCard>
+        <img src="images/noise-2.webp" alt="noise" class="absolute inset-0 w-full h-full">
+        <p class="text-lg relative">Loosely designed in <span class="font-bold text-xl">Figma</span> and coded in <span class="font-bold text-xl">Visual Studio Code</span> by yours truly. Built with <span class="font-bold text-xl">Next.js</span> and <span class="font-bold text-xl">Tailwind CSS</span>, deployed with <span class="font-bold text-xl">Vercel</span>. All text is set in the <span class="font-bold text-xl">Inter</span> typeface.</p>
+    </BentoCard>
     
 </div>
 

@@ -1,0 +1,23 @@
+---
+import Message from '@icons/Message.astro'
+
+interface Props{
+    href: string,
+    content: string
+}
+
+const {href, content} = Astro.props
+
+---
+
+<button class="border white rounded-full truncate py-2 flex items-center relative transition-colors duration-300 fill-none stroke-white  hover:bg-white hover:text-black hover:stroke-black w-full  ">
+    <a 
+        href={href}
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-sm opacity-85 w-full"
+    >
+    <p>{content}</p>
+    <Message class="size-4 absolute top-[8px] right-3" /> 
+    </a>
+</button>

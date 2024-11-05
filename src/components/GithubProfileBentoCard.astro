@@ -2,8 +2,7 @@
 import { getGithubUser } from "@lib/getGithubUser";
 import BentoCard from "@components/BentoCard";
 import GitHub from "@icons/GitHub.astro";
-import Message from "@icons/Message.astro";
-
+import Button from "@components/ui/Button.astro";
 
 const githubUser = await getGithubUser();
 
@@ -44,17 +43,7 @@ const {
              My <span class="font-bold"> goal</span>, to live from this.
         </p>
 
-        <button class="border white rounded-full truncate py-2 flex items-center relative transition-colors duration-300 fill-none stroke-white  hover:bg-white hover:text-black hover:stroke-black  ">
-            <a 
-                href={html_url}
-                rel="noopener noreferrer"
-                target="_blank"
-                class="self-center text-sm opacity-85 w-full"
-            >
-            <p>Visit my GitHub</p>
-            <Message class="size-4 absolute top-[8px] right-3" /> 
-            </a>
-        </button>
+        <Button href={html_url} content="Visit my GitHub" />
     </div>
 </BentoCard>
 
