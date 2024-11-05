@@ -13,7 +13,7 @@ import LetterboxdBentoCard from "@components/LetterboxdBentoCard.astro";
 
 ---
 
-<div class="grid grid-rows-12 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-7 gap-4 py-12">
+<div class="border lg:max-w-6xl lg:m-auto grid place-content-center grid-cols-[repeat(1,268px)] grid-rows-[repeat(20,268px)] md:grid-cols-[repeat(2,268px)] md:grid-rows-[repeat(12,268px)] lg:grid-cols-[repeat(3,268px)]  lg:grid-rows-[repeat(999,268px)] xl:grid-cols-[repeat(4,268px)]  xl:grid-rows-[repeat(6,268px)] gap-4 py-12">
     <GithubProfileBentoCard />
 
     <SpotifyBentoCard client:load />
@@ -22,9 +22,9 @@ import LetterboxdBentoCard from "@components/LetterboxdBentoCard.astro";
 
     <BentoProjectCard class="row-span-2" project={stockx} />    
 
-    <BentoStackCard class="row-span-2" />
+    <BentoStackCard class="lg:col-span-2 xl:row-span-2 xl:col-span-1" />
    
-    <BentoPosterCard src="images/shape-1.svg" class="col-span-2" position="top-0"  />
+    <BentoPosterCard src="images/shape-1.svg" class="lg:col-span-2" position="top-0"  />
  
     <BentoProjectCard project={starbucks} />
 
@@ -46,15 +46,15 @@ import LetterboxdBentoCard from "@components/LetterboxdBentoCard.astro";
 
     <SayHelloBentoCard  />
     
-    <BentoPosterCard src="images/tyson-walpaper.webp" class="row-span-2" position="object-top" />
+    <BentoPosterCard src="images/tyson-walpaper.webp" class="lg:col-span-2 xl:row-span-2 xl:col-span-1" position="lg:object-center object-top" />
 
-    <BentoProjectCard class="col-span-2" project={reactBasicsCommands} /> 
+    <BentoProjectCard class="hidden md:col-span-2 md:block" project={reactBasicsCommands} /> 
 
     <BentoProjectCard project={theSimpsons} />
 
     <BentoProjectCard project={twitter}  />
 
-    <LetterboxdBentoCard />
+    <!-- <LetterboxdBentoCard /> -->
 
 <!-- 
     <BentoCard className="col-span-2">
@@ -62,19 +62,19 @@ import LetterboxdBentoCard from "@components/LetterboxdBentoCard.astro";
 
     </BentoCard> -->
 
-    <BentoCard className="col-span-2">
+    <BentoCard className="md:col-span-2 lg:hidden">
     <h1>1</h1>
     </BentoCard>
 
-    <BentoCard className="bg">
+    <BentoCard >
         <div class="grid place-items-center h-full">
-           <span class="font-bold text-6xl"> {new Date().getFullYear()} &COPY;</span>
+           <span class="font-bold text-5xl"> {new Date().getFullYear()} &COPY;</span>
         </div>
     </BentoCard>
     
     <BentoCard>
         <img src="images/noise-2.webp" alt="noise" class="absolute inset-0 w-full h-full">
-        <p class="text-lg relative">Loosely designed in <span class="font-bold text-xl">Figma</span> and coded in <span class="font-bold text-xl">Visual Studio Code</span> by yours truly. Built with <span class="font-bold text-xl">Next.js</span> and <span class="font-bold text-xl">Tailwind CSS</span>, deployed with <span class="font-bold text-xl">Vercel</span>. All text is set in the <span class="font-bold text-xl">Inter</span> typeface.</p>
+        <p class="relative">Loosely designed in <span class="font-bold text-xl">Figma</span> and coded in <span class="font-bold text-xl">Visual Studio Code</span> by yours truly. Built with <span class="font-bold text-xl">Next.js</span> and <span class="font-bold text-xl">Tailwind CSS</span>, deployed with <span class="font-bold text-xl">Vercel</span>. All text is set in the <span class="font-bold text-xl">Inter</span> typeface.</p>
     </BentoCard>
     
 </div>
