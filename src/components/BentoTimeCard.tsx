@@ -33,9 +33,9 @@ const BentoTimeCard = () => {
     const getPicture = () => {
         if (!currentTime) return ""
         const hours = currentTime.getHours()
-        if(hours < 18) return "images/morning.webp"
-        if(hours < 20) return "images/late-night.webp"
-        return "images/evening.avif"
+        if(hours < 18) return "images/time/morning.webp"
+        if(hours < 20) return "images/time/late-night.webp"
+        return "images/time/evening.avif"
     }
 
     const regionConfig = `${language}-${region}`

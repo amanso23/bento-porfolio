@@ -17,18 +17,13 @@ import ContactBentoCard from "./ContactBentoCard.astro";
 
     <SpotifyBentoCard client:load />
 
-    <BentoCard className="row-span-1 col-span-1" >
-        <picture class="grid place-items-center h-full">
-            <img src="images/spain-flag.svg" alt="" class="size-48">
-        </picture>
-    </BentoCard>
-
+    <BentoTimeCard client:load />
 
     <BentoProjectCard class="row-span-2" project={stockx} />    
 
     <BentoStackCard class="row-span-2 lg:row-span-1 lg:col-span-2 xl:row-span-2 xl:col-span-1 " />
    
-    <BentoPosterCard src="images/shape-1.svg" class="lg:col-span-2" position="top-0"  />
+    <BentoPosterCard src="images/shapes/shape-1.svg" class="lg:col-span-2" position="top-0"  />
  
     <BentoProjectCard project={starbucks} />
 
@@ -42,12 +37,17 @@ import ContactBentoCard from "./ContactBentoCard.astro";
         </div>
     </BentoCard>
 
-    <BentoTimeCard client:load />
+   
+
+    <BentoCard className="row-span-1 col-span-1" >
+        <picture class="grid place-items-center h-full">
+            <img src="images/flags/spain-flag.svg" alt="" class="size-48">
+        </picture>
+    </BentoCard>
    
     <BentoProjectCard project={twitter}  />
    
-    
-    <BentoPosterCard src="images/tyson-walpaper.webp" class=" row-span-2 hidden lg:row-span-2 xl:block" position="lg:object-center object-top" />
+    <BentoPosterCard src="images/walpapers/tyson-walpaper.webp" class=" row-span-2 hidden lg:row-span-2 xl:block" position="lg:object-center object-top" />
 
     <BentoProjectCard class="hidden md:col-span-2 md:block" project={reactBasicsCommands} /> 
 
@@ -55,20 +55,17 @@ import ContactBentoCard from "./ContactBentoCard.astro";
 
     <ContactBentoCard />
 
-
-    <BentoCard className="row-span-2 md:row-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 w-full ">
-        <img src="images/noise-2.webp" alt="noise" class="absolute inset-0 w-full h-full">
-        <p class="relative text-3xl md:text-lg lg:text-lg xl:text-xl">
-            Designed in <span class="font-bold text-3xl md:text-lg  lg:text-lg xl:text-xl  ">Figma</span> and coded in 
-            <span class="font-bold text-3xl lg:text-lg md:text-lg  xl:text-xl ">Visual Studio Code</span> Built with 
-            <span class="font-bold text-3xl  lg:text-lg md:text-lg  xl:text-xl">Astro</span>, 
-            <span class="font-bold text-3xl lg:text-lg md:text-lg xl:text-xl">React</span>, and 
-            <span class="font-bold text-3xl lg:text-lg md:text-lg  xl:text-xl">Tailwind CSS</span>, 
-            deployed with <span class="font-bold text-3xl md:text-lg lg:text-lg xl:text-xl ">Vercel</span>. 
+    <BentoCard className="row-span-2 md:row-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 w-full grid place-items-center h-full">
+        <img src="images/noise/noise-2.webp" alt="noise" class="absolute inset-0 w-full h-full">
+        <p class="relative text-4xl lg:text-xl ">
+            Designed in <span class="font-bold text-3xl  lg:text-xl   ">Figma</span> and coded in 
+            <span class="font-bold text-3xl lg:text-xl   ">Visual Studio Code</span> Built with 
+            <span class="font-bold text-3xl lg:text-xl  ">Astro</span>, 
+            <span class="font-bold text-3xl lg:text-xl ">React</span>, and 
+            <span class="font-bold text-3xl lg:text-xl  ">Tailwind CSS</span>, 
+            deployed with <span class="font-bold text-3xl lg:text-lg  ">Vercel</span>. 
           </p>
-
     </BentoCard>
-    
     
 </div>
 
