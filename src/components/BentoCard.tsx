@@ -1,7 +1,4 @@
-
 import type React from 'react';
-import Redirect from '@icons/Redirect.tsx';
-
 
 interface Props{ 
     children: React.ReactNode

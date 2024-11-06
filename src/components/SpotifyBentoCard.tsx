@@ -1,5 +1,5 @@
 import BentoCard from "@components/BentoCard";
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import Volume from "../icons/Volume";
 import Spotify from "../icons/Spotify";
 import NoVolume from "../icons/NoVolume";
