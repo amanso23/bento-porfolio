@@ -9,11 +9,11 @@ import { starbucks, stockx, reactBasicsCommands, theSimpsons, twitter} from "@li
 import BentoProjectCard from "@components/BentoProjectCard.astro";
 import BentoStackCard from "./BentoStackCard.astro";
 import BentoPosterCard from "./BentoPosterCard.astro";
-import LinkedinBentoCard from "./LinkedinBentoCard.astro";
+import ContactBentoCard from "./ContactBentoCard.astro";
 
 ---
 
-<div class="lg:max-w-6xl lg:m-auto grid place-content-center grid-cols-[repeat(1,268px)] grid-rows-[repeat(18,268px)] md:grid-cols-[repeat(2,268px)] md:grid-rows-[repeat(12,268px)] lg:grid-cols-[repeat(3,268px)]  lg:grid-rows-[repeat(999,268px)] xl:grid-cols-[repeat(4,268px)]  xl:grid-rows-[repeat(6,268px)] gap-4 py-12">
+<div class="lg:max-w-6xl lg:m-auto grid place-content-center grid-cols-[repeat(1,268px)] grid-rows-[repeat(16,268px)] md:grid-cols-[repeat(2,268px)] md:grid-rows-[repeat(9,268px)] lg:grid-cols-[repeat(3,268px)] lg:grid-rows-[repeat(6,268px)] xl:grid-cols-[repeat(4,268px)]  xl:grid-rows-[repeat(5,268px)] gap-4 py-12">
     <GithubProfileBentoCard />
 
     <SpotifyBentoCard client:load />
@@ -48,24 +48,24 @@ import LinkedinBentoCard from "./LinkedinBentoCard.astro";
     <BentoProjectCard project={twitter}  />
    
     
-    <BentoPosterCard src="images/tyson-walpaper.webp" class="row-span-2 md:row-span-1 lg:row-span-2" position="lg:object-center object-top" />
+    <BentoPosterCard src="images/tyson-walpaper.webp" class=" row-span-2 hidden lg:row-span-2 xl:block" position="lg:object-center object-top" />
 
     <BentoProjectCard class="hidden md:col-span-2 md:block" project={reactBasicsCommands} /> 
 
     <BentoProjectCard project={theSimpsons} />
 
-    <LinkedinBentoCard />
+    <ContactBentoCard />
 
 
-    <BentoCard className="row-span-2 md:row-span-1 md:col-span-1 lg:col-span-2 xl:col-span-1 w-full ">
+    <BentoCard className="row-span-2 md:row-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 w-full ">
         <img src="images/noise-2.webp" alt="noise" class="absolute inset-0 w-full h-full">
-        <p class="relative text-3xl md:text-lg lg:text-4xl xl:text-xl">
-            Designed in <span class="font-bold text-3xl md:text-lg  lg:text-4xl xl:text-xl  ">Figma</span> and coded in 
-            <span class="font-bold text-3xl lg:text-4xl md:text-lg  xl:text-xl ">Visual Studio Code</span> Built with 
-            <span class="font-bold text-3xl  lg:text-4xl md:text-lg  xl:text-xl">Astro</span>, 
-            <span class="font-bold text-3xl lg:text-4xl md:text-lg xl:text-xl">React</span>, and 
-            <span class="font-bold text-3xl lg:text-4xl md:text-lg  xl:text-xl">Tailwind CSS</span>, 
-            deployed with <span class="font-bold text-3xl md:text-lg lg:text-4xl xl:text-xl ">Vercel</span>. 
+        <p class="relative text-3xl md:text-lg lg:text-lg xl:text-xl">
+            Designed in <span class="font-bold text-3xl md:text-lg  lg:text-lg xl:text-xl  ">Figma</span> and coded in 
+            <span class="font-bold text-3xl lg:text-lg md:text-lg  xl:text-xl ">Visual Studio Code</span> Built with 
+            <span class="font-bold text-3xl  lg:text-lg md:text-lg  xl:text-xl">Astro</span>, 
+            <span class="font-bold text-3xl lg:text-lg md:text-lg xl:text-xl">React</span>, and 
+            <span class="font-bold text-3xl lg:text-lg md:text-lg  xl:text-xl">Tailwind CSS</span>, 
+            deployed with <span class="font-bold text-3xl md:text-lg lg:text-lg xl:text-xl ">Vercel</span>. 
           </p>
 
     </BentoCard>
