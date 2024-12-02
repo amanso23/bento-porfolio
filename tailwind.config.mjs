@@ -20,6 +20,7 @@ export default {
 				'letterboxd': '#445566'
 			},
 			fill: {
+				'primary': '#1d1d1d',
 				'secondary': '#B3B3B3'
 			},
 			maxWidth: {
