@@ -57,7 +57,7 @@ const BentoTimeCard = () => {
     return (
         <BentoCard className="col-span-1 row-span-1 overflow-hidden">
                 <picture className="absolute top-0 left-0 w-full h-full object-cover">
-                    <img src={getPicture()} alt="picture" className="w-full h-full object-cover z-0" />
+                    <img src={getPicture() || "images/time/morning.webp"} alt="picture" className="w-full h-full object-cover z-0" />
                 </picture>
                 <div className="grid place-items-start h-full font-bold z-50 relative" >
                     <h2 className="text-4xl">{getGreeting()}</h2>
