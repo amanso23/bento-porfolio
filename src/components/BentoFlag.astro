@@ -1,0 +1,20 @@
+---
+
+import BentoCard from "@components/BentoCard"
+
+interface Props {
+    flagSrc: string
+}
+
+const { flagSrc } = Astro.props
+
+---
+
+<BentoCard className="row-span-1 col-span-1" >
+    <picture class="grid place-items-center h-full">
+        <img 
+            src={flagSrc}
+            alt="country-flag" 
+            class="size-48">
+    </picture>
+</BentoCard>
