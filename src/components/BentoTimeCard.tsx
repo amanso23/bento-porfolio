@@ -101,6 +101,7 @@ const BentoTimeCard = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group uppercase backdrop-blur-sm bg-white/40 px-3 py-2 rounded-full transition-colors duration-200 hover:bg-white/60 text-sm"
+                            title="Open in Google Maps"
                         >
                             {data?.location}
                             <Redirect className="stroke-white inline-block size-5 mb-[2px] ml-1 transition-transform duration-300 group-hover:transform group-hover:-translate-y-1 group-hover:translate-x-1" />
