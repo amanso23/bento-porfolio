@@ -1,8 +1,7 @@
 ---
-import { getGithubUser } from "@lib/getGithubUser";
-import BentoCard from "@components/BentoCard";
-import GitHub from "@icons/GitHub.astro";
-import Button from "@components/ui/Button.astro";
+import { getGithubUser } from "@lib/getGithubUser"
+import BentoCard from "@components/BentoCard"
+import Button from "@components/ui/Button.astro"
 
 const githubUser = await getGithubUser();
 
@@ -31,8 +30,6 @@ const {
                     <p class="text-secondary text-sm mt-[-4px]">{login}</p>
                 </div>
             </div>
-           
-          
         </div>
 
         <p class="text-lg font-light w-[105%] mr-2" >
@@ -40,7 +37,7 @@ const {
              Today I expand my <span class="font-bold">knowledge.</span> 
              My <span class="font-bold"> goal</span>, to live from this.
         </p>
-
+        
         <Button href={html_url} content="Visit my GitHub" />
     </div>
 </BentoCard>

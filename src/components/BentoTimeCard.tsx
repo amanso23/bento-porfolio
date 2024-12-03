@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import BentoCard from "@components/BentoCard";
-import { location } from "@lib/location";
-import { country } from "src/const";
-import Redirect from "@icons/Redirect";
-import type { Data } from "src/types";
+import { useEffect, useState } from "react"
+import BentoCard from "@components/BentoCard"
+import { location } from "@lib/location"
+import { country } from "src/const"
+import Redirect from "@icons/Redirect"
+import type { Data } from "src/types"
 
 const BentoTimeCard = () => {
 

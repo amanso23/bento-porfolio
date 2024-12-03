@@ -1,9 +1,9 @@
-import BentoCard from "@components/BentoCard";
-import { useState, useRef } from 'react';
-import Volume from "../icons/Volume";
-import Spotify from "../icons/Spotify";
-import NoVolume from "../icons/NoVolume";
-import { spotifyTrack } from "@lib/spotifyTrack";
+import BentoCard from "@components/BentoCard"
+import { useState, useRef } from 'react'
+import Volume from "../icons/Volume"
+import Spotify from "../icons/Spotify"
+import NoVolume from "../icons/NoVolume"
+import { spotifyTrack } from "@lib/spotifyTrack"
 
 
 const SpotifyBento = () => {
@@ -16,9 +16,7 @@ const SpotifyBento = () => {
         if(audioRef.current){
             audioRef.current.play()
         }
-    };
-
-   
+    }
 
     return (
         <BentoCard>
