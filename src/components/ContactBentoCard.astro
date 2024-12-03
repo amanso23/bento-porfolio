@@ -1,12 +1,13 @@
 ---
 import BentoCard from "@components/BentoCard"
 import { socials } from "@lib/socials"
+import Linkedin from "@icons/Linkedin.astro"
 
 ---
 <BentoCard className="row-span-1">
     
     <div class="grid place-items-center h-full">
-        <ul class="grid grid-cols-2 gap-2">
+        <!-- <ul class="grid grid-cols-2 gap-2">
             {socials.map(({icon: Icon, label, href}) => (
                 <li>
                     <a 
@@ -20,7 +21,11 @@ import { socials } from "@lib/socials"
                     </a>
                 </li>
             ))}
-        </ul>
+        </ul> -->
+
+        <a href="https://www.linkedin.com/in/adri%C3%A1n-manso-0467682b8/" title="Linkedin">
+            <Linkedin class="transition-opacity duration-300 hover:opacity-65 w-full absolute inset-0 object-cover" />
+        </a>
 
     </div>
     
