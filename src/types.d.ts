@@ -60,3 +60,9 @@ export interface Project {
   src: string,
 }
 
+export interface Data {
+  picture: string | null,
+  greeting: string | null,
+  location: string | null,
+}
+
