@@ -1,0 +1,26 @@
+---
+
+import BentoCard from "@components/BentoCard"
+
+interface Props {
+    text: string
+    repeat?: number
+}
+
+const {
+    text,
+    repeat = 5
+} = Astro.props
+
+---
+
+<BentoCard className="row-span-1 col-span-1" >
+    <div class="grid place-items-center h-full">
+        {Array(repeat).fill(text).map(text => (
+            <p class="font-bold text-4xl">{text}</p>
+        ))}
+    </div>
+</BentoCard>
+
+
+
