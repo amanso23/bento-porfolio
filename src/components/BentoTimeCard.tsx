@@ -67,7 +67,7 @@ const BentoTimeCard = () => {
         <BentoCard className="col-span-1 row-span-1 overflow-hidden">
             {loading ? (
                 <div className="animate-pulse">
-                    <div className="absolute top-0 left-0 w-full h-full bg-gray-200 z-0"></div>
+                    {/* <div className="absolute top-0 left-0 w-full h-full bg-gray-200 z-0"></div>
                     <div className="grid place-items-start h-full font-bold z-50 relative p-4">
                         <div className="w-3/4 h-8 bg-gray-200 rounded mb-4"></div>
                         <div className="flex items-center gap-x-1">
@@ -75,7 +75,7 @@ const BentoTimeCard = () => {
                             <div className="w-10 h-6 bg-gray-200 rounded mt-3"></div>
                         </div>
                         <div className="w-1/3 h-10 bg-gray-200 rounded mt-4"></div>
-                    </div>
+                    </div> */}
                 </div>
             ) : (
                 <>
