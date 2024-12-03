@@ -1,71 +1,34 @@
 ---
 
-import BentoCard from "@components/BentoCard";
 import SpotifyBentoCard from "@components/SpotifyBentoCard";
-import GithubProfileBentoCard from "./GithubProfileBentoCard.astro";
+import GithubProfileBentoCard from "@components/GithubProfileBentoCard.astro";
 import BentoTimeCard from "@components/BentoTimeCard";
 import { starbucks, stockx, reactBasicsCommands, theSimpsons, twitter} from "@lib/projects";
 import BentoProjectCard from "@components/BentoProjectCard.astro";
-import BentoStackCard from "./BentoStackCard.astro";
-import BentoPosterCard from "./BentoPosterCard.astro";
-import ContactBentoCard from "./ContactBentoCard.astro";
+import BentoStackCard from "@components/BentoStackCard.astro";
+import BentoPosterCard from "@components/BentoPosterCard.astro";
+import ContactBentoCard from "@components/ContactBentoCard.astro";
+import BentoAbout from "@components/BentoAbout.astro";
+import BentoText from "@components/BentoText.astro";
+import BentoFlag from "@components/BentoFlag.astro";
 
 ---
 
 <div class="lg:max-w-xl lg:m-auto grid place-content-center grid-cols-[repeat(1,268px)] grid-rows-[repeat(15,268px)] md:grid-cols-[repeat(2,268px)] md:grid-rows-[repeat(9,268px)] lg:grid-cols-[repeat(3,268px)] lg:grid-rows-[repeat(6,268px)] xl:grid-cols-[repeat(4,268px)]  xl:grid-rows-[repeat(5,268px)] gap-4 py-12">
     <GithubProfileBentoCard />
-
     <SpotifyBentoCard client:load />
-
     <BentoTimeCard client:load />
-
     <BentoProjectCard class="row-span-2" project={stockx} />    
-
     <BentoStackCard class="row-span-2 lg:row-span-1 lg:col-span-2 xl:row-span-2 xl:col-span-1 " />
-   
     <BentoPosterCard src="images/shapes/shape-1.svg" class="lg:col-span-2" position="top-0"  />
- 
     <BentoProjectCard project={starbucks} />
-
-    <BentoCard className="row-span-1 col-span-1" >
-        <div class="grid place-items-center h-full ">
-            <h1 class="font-bold text-4xl">obsessive</h1>
-            <h1 class="font-bold text-4xl ">obsessive</h1>
-            <h1 class="font-bold text-4xl ">obsessive</h1>
-            <h1 class="font-bold text-4xl  ">obsessive</h1>
-            <h1 class="font-bold text-4xl  ">obsessive</h1>
-        </div>
-    </BentoCard>
-
-   
-
-    <BentoCard className="row-span-1 col-span-1" >
-        <picture class="grid place-items-center h-full">
-            <img src="images/flags/spain-flag.svg" alt="" class="size-48">
-        </picture>
-    </BentoCard>
-   
+    <BentoText text="obsessive" />
+    <BentoFlag flagSrc="images/flags/spain-flag.svg" />
     <BentoProjectCard project={twitter}  />
-   
     <BentoPosterCard src="images/walpapers/tyson-walpaper.webp" class=" row-span-2 hidden lg:row-span-2 xl:block" position="lg:object-center object-top" />
-
     <BentoProjectCard class="hidden md:col-span-2 md:block" project={reactBasicsCommands} /> 
-
     <BentoProjectCard project={theSimpsons} />
-
     <ContactBentoCard />
-
-    <BentoCard className="md:row-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 w-full grid place-items-center h-full">
-        <img src="images/noise/noise-2.webp" alt="noise" class="absolute inset-0 w-full h-full">
-        <p class="relative text-xl md:text-3xl  lg:text-xl ">
-            Designed in <span class="font-bold text-xl md:text-3xl   lg:text-xl   ">Figma</span> and coded in 
-            <span class="font-bold text-xl md:text-3xl lg:text-xl   ">Visual Studio Code</span> Built with 
-            <span class="font-bold text-xl md:text-3xl   lg:text-xl  ">Astro</span>, 
-            <span class="font-bold text-xl md:text-3xl  lg:text-xl ">React</span>, and 
-            <span class="font-bold text-xl md:text-3xl  lg:text-xl  ">Tailwind CSS</span>, 
-            deployed with <span class="font-bold text-xl md:text-3xl  lg:text-lg  ">Vercel</span>. 
-          </p>
-    </BentoCard>
-    
+    <BentoAbout />
 </div>
   
