@@ -30,6 +30,7 @@ const SpotifyBento = () => {
                 <Spotify className="size-10 transition-opacity duration-300 hover:opacity-70" />
             </a>
             <video
+                aria-hidden="true"
                 ref={videoRef}
                 className="absolute top-0 left-0 w-full h-full object-cover"
                 loop
