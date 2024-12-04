@@ -3,10 +3,10 @@ import Message from '@icons/Message.astro'
 
 interface Props{
     href: string,
-    content: string
+    social: string
 }
 
-const {href, content} = Astro.props
+const {href, social} = Astro.props
 
 ---
 
@@ -16,9 +16,9 @@ const {href, content} = Astro.props
         rel="noopener noreferrer"
         target="_blank"
         class="text-sm opacity-85 w-full"
-        title={`View ${content}`}
+        title={`Link to my ${social}`}
     >
-    <p>{content}</p>
+    <p>Visit my {social}</p>
     <Message class="size-4 absolute top-[9px] right-3" /> 
     </a>
 </button>
