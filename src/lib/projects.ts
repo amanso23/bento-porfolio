@@ -20,7 +20,7 @@ export const reactBasicsCommands: Project =
     {
         name: "React Basics Commands", 
         madeWith: "React, TypeScript",
-        href: "https://react-basic-installation-command.vercel.app/",
+        href: "https://react-basic-installation-commands.vercel.app/",
         src: "images/projects/react-basics-commands.webp"
     }
 
@@ -37,6 +37,6 @@ export const reactBasicsCommands: Project =
     {
         name: "Twitter Clone", 
         madeWith: "React, Tailwind CSS",
-        href: "https://twitter-frontend-clone-beta.vercel.app/home",
+        href: "https://twitter-frontend-clone-nu.vercel.app",
         src: "images/projects/twitter-clone.webp"
     }
